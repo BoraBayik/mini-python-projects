@@ -2,7 +2,7 @@
 
 Welcome to my collection of small Python projects!
 
-These are simple programs I built while familiarizing myself with Python. I already have programming experience in other languages, and these projects have helped me transition to Python and gain new skills in the process.
+These are simple programs I built while learning Python, focusing on practicing basic programming skills on python like loops, conditionals, functions, and working with user input.
 
 ## Why I Made This
 
