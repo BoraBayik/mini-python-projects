@@ -111,12 +111,12 @@ while i>0:
             print("\n**** YOU WIN ****\n")
             i-=1
         else:
-            print(f"Kelimen {''.join(wordhidden)}\n")
-            guessedword = input("Guess a Word = ")
-            for x in wordselected:
-                for y in guessedword:
-                    if x == y:
-                        wordhidden[wordselected.index(x)] = x
+            print(f"Your word {''.join(wordhidden)}\n")
+            guessedword = input("Tahmin et = ")
+            for x in range(len(wordselected)):
+                for y in range(len(guessedword)):
+                    if wordselected[x] == guessedword[y] and wordhidden[x] == '_':
+                        wordhidden[x] = wordselected[x]
                         find = True
 
             if find == False:
@@ -137,10 +137,10 @@ while i>0:
         else:
             print(f"Kelimen {''.join(wordhidden)}\n")
             guessedword = input("Tahmin et = ")
-            for x in wordselected:
-                for y in guessedword:
-                    if x == y:
-                        wordhidden[wordselected.index(x)] = x
+            for x in range(len(wordselected)):
+                for y in range(len(guessedword)):
+                    if wordselected[x] == guessedword[y]  and wordhidden[x] == '_':
+                        wordhidden[x] = wordselected[x]
                         find = True
 
             if find == False:
