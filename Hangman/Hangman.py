@@ -112,7 +112,7 @@ while i>0:
             i-=1
         else:
             print(f"Your word {''.join(wordhidden)}\n")
-            guessedword = input("Tahmin et = ")
+            guessedword = input("Guess = ")
             for x in range(len(wordselected)):
                 for y in range(len(guessedword)):
                     if wordselected[x] == guessedword[y] and wordhidden[x] == '_':
